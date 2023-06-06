@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./fonts/BebasNeue-Regular.ttf') format('truetype');
+
+  }
+  
+  @font-face {
+    font-family: 'Oxanium';
+    src: url('./fonts/Oxanium-Regular.ttf') format('truetype');
+    
+  }
+
+  .project-gradient {
+    background-image: linear-gradient(
+      to right,
+      #570010, 
+      #2D024F
+    );
+  }
+
+.landing-gradient {
+    background-image: linear-gradient(
+      to right,
+      #600AB6,
+      transparent 
+    );
+
+}
+
+.cta-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      #34015B,
+      #5A01B2
+    );
+}
+
+.fiend-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      #5A01B2,
+      transparent 
+    );
+}
+
+.border-gradient {
+    background-image: linear-gradient(
+      to bottom,
+      #5709A7,
+      #000316 
+    );
+}
+
+.footer-gradient {
+    background-image: linear-gradient(
+      to bottom right,
+      #5709A7,
+      transparent 
+    );
+}
