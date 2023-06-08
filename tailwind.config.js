@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         mainPurple: "#5709A7",
-        black: "#2D2D2D",
+        black: "#000316",
         offWhite: "#D9D9D9",
         formbutton: "#00093D",
         borderPurple: "rgba(90, 1, 178, 0.37)",

@@ -1,11 +1,9 @@
-import Lottie from "lottie-react";
-import animationData from "../assets/animations/126196-jansmavip-html-and-coding-pages.json";
+import NavBar from "../components/Nav/NavBar";
 
 const HomePage = () => {
   return (
-    <div>
-      gang
-      <Lottie animationData={animationData} loop={true} />
+    <div className="">
+      <NavBar />
     </div>
   );
 };

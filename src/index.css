@@ -62,3 +62,11 @@
       transparent 
     );
 }
+
+.hamburger-gradient { 
+    background-image: linear-gradient(
+      to bottom right,
+      #5709A7,
+      #A05CE3 
+    );
+}
