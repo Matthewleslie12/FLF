@@ -15,6 +15,7 @@ export default {
         oxanium: ["Oxanium", "sans-serif"],
       },
       fontSize: {
+        xss:"0.75rem",
         xs: "1.5rem",
         sm: "1.625rem",
         md: "1.875rem",
