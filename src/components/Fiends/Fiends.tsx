@@ -3,6 +3,7 @@ import FiendBios from "../../assets/fiend-bios/fiend-bios.json"
 import useBioState from "../../hooks/bioHooks";
 import BioCard from "../BioCard/BioCard";
 import { BioType } from "../../types/bioInterface";
+import FiendSpotlight from "../FiendSpotlight/FiendSpotlight";
 const Fiends = () => {
 
   
@@ -14,7 +15,7 @@ const Fiends = () => {
 
     
     const fiendBio: BioType= FiendBios.bios.find((bio) => bio.id === activeFiend) || FiendBios.bios[0];
-    console.log(fiendBio)
+    
     setActiveFiendBio(fiendBio);
     console.log(fiendBio)
     
@@ -26,7 +27,7 @@ const Fiends = () => {
     <div className="m-lg">
       <h1>Meet the Fiends</h1>
       <div>
-
+        {/* <FiendSpotlight /> */}
       </div>
       <div>
         <BioCard
