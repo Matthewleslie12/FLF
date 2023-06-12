@@ -70,3 +70,34 @@
       #A05CE3 
     );
 }
+
+.center-spotlight {
+    background-image: radial-gradient(
+      circle at 50% 50%,
+      #050481,
+      transparent
+      
+    );
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius:100%;
+    
+}
+
+.slider-spotlight{
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    #5709A7,
+    transparent
+  );
+  width: 5.687rem;
+  height: 5.687rem;
+  border-radius:100%;
+  margin:0;
+
+}
+
+.center-photo{
+    width: 6.25rem;
+    height: 6.25rem;
+}

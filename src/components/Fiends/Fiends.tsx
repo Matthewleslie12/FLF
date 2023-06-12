@@ -27,16 +27,16 @@ const Fiends = () => {
     <div className="m-lg">
       <h1>Meet the Fiends</h1>
       <div>
-        {/* <FiendSpotlight /> */}
+        <FiendSpotlight />
       </div>
       <div>
-        <BioCard
+        {/* <BioCard
           id = {activeFiendBio.id}
           name={activeFiendBio.name}
           bio={activeFiendBio.bio}
           techStack={activeFiendBio.techStack}
           hobbies={activeFiendBio.hobbies}
-        />
+        /> */}
 
       </div>
       
