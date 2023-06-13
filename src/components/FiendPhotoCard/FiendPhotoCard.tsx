@@ -4,7 +4,7 @@ import { photoCardProps } from '../../types/photoCardInterface';
 const FiendPhotoCard = (photoCardProps:photoCardProps) => {
 
   const { pic, isActive} = photoCardProps;
-  // w-[8.75rem] h-[8.75rem] rounded-full center-spotlight 
+ 
   if (isActive){
     return (
       <div className="w-[8.75rem] h-[8.75rem] rounded-full m-0 flex items-center justify-center">

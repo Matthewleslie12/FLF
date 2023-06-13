@@ -17,7 +17,7 @@ const Fiends = () => {
     const fiendBio: BioType= FiendBios.bios.find((bio) => bio.id === activeFiend) || FiendBios.bios[0];
     
     setActiveFiendBio(fiendBio);
-    console.log(fiendBio)
+    
     
   },[activeFiend,setActiveFiendBio])
 
@@ -26,11 +26,11 @@ const Fiends = () => {
   return (
     <div className="m-lg ">
       <h1 className="text-[1.75rem] md:text-[2.5rem] font-bebas text-offWhite self-start">Meet the Fiends</h1>
-      <div className="flex flex-col md:flex-row mt-[rem]">
-      <div className="w-full">
-        <FiendSpotlight />
+      <div className="flex flex-col md:flex-row mt-[1rem] ">
+      <div className="w-full md:w-[17rem]">
+        <FiendSpotlight activeFiend={activeFiend} setActiveFiend={setActiveFiend}/>
       </div>
-      <div>
+      <div className="w-full flex justify-center">
          <BioCard 
           id = {activeFiendBio.id}
           name={activeFiendBio.name}

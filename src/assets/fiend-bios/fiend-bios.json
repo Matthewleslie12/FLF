@@ -1,19 +1,27 @@
 {
   "bios":[
     {
-      "id": "alejo",
+      "id": "Alejo",
       "name": "Alejandro Castro",
       "bio": "A friendly developer with an eye for design. I love creating new, fresh designs and challenging myself to create them using my front-end development skills",
       "techStack": ["HTML", "CSS", "JAVASCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
       "hobbies" : ["Chess","Guitar","Dancing","Crochet","Basketball","Volleyball","Cycling"]
     },
     {
-      "id":"mattm",
+      "id":"Trap",
       "name":"Matthew Moreira",
       "bio":"temp bio",
       "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
       "hobbies":["Gaming","Running","Reading","Card Games", "Hiking"]
+    },
+    {
+      "id":"Ben",
+      "name":"Benjamin Stubina",
+      "bio":"temp bio",
+      "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
+      "hobbies":["Gaming","Running","Reading","Card Games", "Hiking"]
     }
+    
   ]
   
 }
