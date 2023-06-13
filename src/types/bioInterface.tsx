@@ -4,4 +4,6 @@ export interface BioType {
   bio: string;
   techStack: string[];
   hobbies: string[];
+  linkedIn:string;
+  gitHub:string;
 }

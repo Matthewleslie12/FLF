@@ -10,11 +10,12 @@ import { useEffect, useState } from 'react';
 // import NG from "../../assets/fiends-pics/ng.png";
 // import Sam from "../../assets/fiends-pics/sam.png";
 import FiendBios from "../../assets/fiend-bios/fiend-bios.json";
+import { SpotlightProps } from '../../types/SpotlightProps';
 
 
-const FiendSpotlight = ({setActiveFiend, activeFiend}) => {
+const FiendSpotlight = (SpotlightProps: SpotlightProps) => {
 
-
+  const { activeFiend, setActiveFiend } = SpotlightProps
   const fiendRoster = FiendBios.bios.map((bio:{id:string}) => bio.id);
   
   
@@ -28,8 +29,7 @@ const FiendSpotlight = ({setActiveFiend, activeFiend}) => {
   ,[slideActiveIndex,setActiveFiend])
 
 
-  const updateClasses = (e) => {
-    
+  const updateClasses = (e:{realIndex:number}) => {
     setSlideActiveIndex(e.realIndex)
   }
   
@@ -44,7 +44,7 @@ const FiendSpotlight = ({setActiveFiend, activeFiend}) => {
     onSwiper={(swiper) => console.log(swiper)}
     onActiveIndexChange={(swiper) => updateClasses(swiper)}
     onInit = {(swiper) => updateClasses(swiper)}
-    className = "max-w-[32.1875rem] h-[13.625rem] md:w-full md:h-[32.8125rem] "
+    className = "max-w-[32.1875rem] h-[13.625rem] md:w-full md:h-[32.8125rem] hover:cursor-pointer "
 
     breakpoints={{
       

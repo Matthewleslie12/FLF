@@ -5,21 +5,28 @@
       "name": "Alejandro Castro",
       "bio": "A friendly developer with an eye for design. I love creating new, fresh designs and challenging myself to create them using my front-end development skills",
       "techStack": ["HTML", "CSS", "JAVASCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
-      "hobbies" : ["Chess","Guitar","Dancing","Crochet","Basketball","Volleyball","Cycling"]
+      "hobbies" : ["Chess","Guitar","Dancing","Crochet","Basketball","Volleyball","Cycling"],
+      "linkedIn":"https://www.linkedin.com/in/alejandro-castro-professional/",
+      "gitHub":"https://github.com/alejo2198"
     },
     {
       "id":"Trap",
       "name":"Matthew Moreira",
       "bio":"temp bio",
       "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
-      "hobbies":["Gaming","Running","Reading","Card Games", "Hiking"]
+      "hobbies":["Gaming","Running","Reading","Card Games", "Hiking"],
+      "linkedIn":"https://www.linkedin.com/in/matthew-j-moreira/",
+      "gitHub":"https://github.com/moreiramj"
+      
     },
     {
       "id":"Ben",
       "name":"Benjamin Stubina",
       "bio":"temp bio",
       "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
-      "hobbies":["Gaming","Running","Reading","Card Games", "Hiking"]
+      "hobbies":["Gaming","Running","Reading","Card Games", "Hiking"],
+      "gitHub":"https://github.com/BenjaminStubina",
+      "linkedIn":"https://www.linkedin.com/in/benjamin-stubina/"
     }
     
   ]

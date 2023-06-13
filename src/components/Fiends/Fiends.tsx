@@ -37,6 +37,8 @@ const Fiends = () => {
           bio={activeFiendBio.bio}
           techStack={activeFiendBio.techStack}
           hobbies={activeFiendBio.hobbies}
+          linkedIn={activeFiendBio.linkedIn}
+          gitHub={activeFiendBio.gitHub}
         />
 
       </div>

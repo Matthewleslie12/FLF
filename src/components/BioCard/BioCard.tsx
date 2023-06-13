@@ -10,7 +10,7 @@ import useBioState from "../../hooks/bioHooks.tsx";
 import { useEffect } from "react";
 
 const BioCard = (BioCardProps:BioType) => {
-  const { name, bio, techStack, hobbies,id } = BioCardProps;
+  const { name, bio, techStack, hobbies,id, linkedIn, gitHub } = BioCardProps;
 
   const { activeFiendPic, setActiveFiendPic } = useBioState();
 
@@ -22,7 +22,10 @@ const BioCard = (BioCardProps:BioType) => {
     } else if (id === "Trap") {
       setActiveFiendPic(Trap);
     }
+    
   }
+
+  
   ,[id,setActiveFiendPic])
 
 
@@ -61,15 +64,16 @@ const BioCard = (BioCardProps:BioType) => {
                 <img src={ResumeIcon} alt="Resume Icon" className="min-w-[2.625rem] min-h-[2.5625rem] md:min-h-[4.375rem] md:min-w-[4.375rem]"></img>
               </li>
             </a>
-            <a href="RESUME ADD L8R" className="no-underline ">
+            <a href={linkedIn} className="no-underline ">
               <li className="">
                 <img src={LinkedInLogo} alt="LinkedIn Logo" className="min-w-[3.1875rem] min-h-[3.1875rem] md:min-h-[5.3125rem] md:min-w-[5.3125rem] mt-md"></img>
               </li>
             </a>
-            <a href="RESUME ADD L8R" className="no-underline">
+            <a href={gitHub} className="no-underline">
               <li className="">
                 <img src={GitHubLogo} alt="GitHub Logo" className="min-w-[2.625rem] min-h-[2.625rem] md:min-h-[4.375rem] md:min-w-[4.375rem] mt-sm "></img>
-            </li></a>
+              </li>
+            </a>
           </ul>
         </div>
       </div>
