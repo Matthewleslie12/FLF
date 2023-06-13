@@ -72,32 +72,36 @@
 }
 
 .center-spotlight {
+  /* activeIndex spotlight styling */
     background-image: radial-gradient(
       circle at 50% 50%,
       #050481,
       transparent
       
     );
-    width: 8.75rem;
-    height: 8.75rem;
-    border-radius:100%;
     
+    position:absolute;
+    z-index:1;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+   -ms-filter: blur(5px);
+    filter:blur(5px);
 }
 
 .slider-spotlight{
+  /* for non center spotlight in swiper */
   background-image: radial-gradient(
     circle at 50% 50%,
     #5709A7,
     transparent
   );
-  width: 5.687rem;
-  height: 5.687rem;
-  border-radius:100%;
-  margin:0;
-
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter:blur(15px);
+  position:relative;
+  z-index:1;
 }
 
-.center-photo{
-    width: 6.25rem;
-    height: 6.25rem;
-}

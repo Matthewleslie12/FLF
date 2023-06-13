@@ -24,22 +24,23 @@ const Fiends = () => {
 
 
   return (
-    <div className="m-lg">
-      <h1>Meet the Fiends</h1>
-      <div>
+    <div className="m-lg ">
+      <h1 className="text-[1.75rem] md:text-[2.5rem] font-bebas text-offWhite self-start">Meet the Fiends</h1>
+      <div className="flex flex-col md:flex-row mt-[rem]">
+      <div className="w-full">
         <FiendSpotlight />
       </div>
       <div>
-        {/* <BioCard
+         <BioCard 
           id = {activeFiendBio.id}
           name={activeFiendBio.name}
           bio={activeFiendBio.bio}
           techStack={activeFiendBio.techStack}
           hobbies={activeFiendBio.hobbies}
-        /> */}
+        />
 
       </div>
-      
+      </div>
     </div>
   );
 };
