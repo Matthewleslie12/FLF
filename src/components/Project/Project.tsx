@@ -1,78 +1,43 @@
 import SabrinaImage from '../../assets/sabrina.png'
+import { ProjectProps } from '../../types/projectType'
+import TechStackList from '../TechStackList/TechStackList'
 
-import ReactIcon from '../../assets/Tech-icons/react.png'
-import HTMLIcon from '../../assets/Tech-icons/html.png'
-import SASSIcon from '../../assets/Tech-icons/sass.png'
-import NodeIcon from '../../assets/Tech-icons/nodejs.png'
-import ExpressIcon from '../../assets/Tech-icons/express-js-icon.png'
-import PostGresIcon from '../../assets/Tech-icons/Postgresql_elephant.svg.png'
-
-const Project = () => {
+const Project = ({image,title,description,features,tech_stack}: ProjectProps) => {
+    const imageMatcher = (projectImage:string) => {
+        switch (projectImage){
+            case "Sabrina":
+                return SabrinaImage
+                break;
+        }
+    }
     return (
-        <article className='text-white'>
-            <h2 className=" font-bebas text-xs pl-4">Projects</h2>
+        <article className='text-white xl:max-w-[1280px] xl:m-auto relative'>
+            <h2 className=" font-bebas text-xs pl-4 md:text-[2.5rem] md:mb-6 xl:text-lg">Projects</h2>
             <div className="md:flex ">
-                <div className='relative rounded-full  h-96 max-w-sm  mx-auto flex md:w-[50%] md:mx-0 md:max-w-[50%]  md:h-[30rem]'>
-                    <div className="blur-xl rounded-full project-gradient absolute top-0 left-0 right-0 bottom-0 md:w-[30rem] md:left-[-8rem] "></div>
-                    <img className="m-auto z-10 h-[14rem] md:relative md:left-[-2rem]" src={SabrinaImage} alt="project image for sabfit" />
-                </div>
-                <div className="flex  px-4 gap-x-6 mb-4 md:w-[50%] md:flex-col md:gap-x-0 md:gap-y-6">
+                <div className="blur-xl rounded-full project-gradient absolute right-[50%] translate-x-1/2 h-[23rem] w-[23rem] md:w-[clamp(30rem,60vw,32rem)] md:h-[clamp(30rem,60vw,32rem)] md:left-[-8rem] md:right-0 md:translate-x-[9vw] xl:translate-x-[7rem] content"></div>
+                <div className='relative rounded-full  h-96 max-w-sm  mx-auto flex md:w-[50%] md:mx-0 md:max-w-[50%]  md:h-[30rem] xl:w-[45%]'>
+                    <h4 className='mx-auto  absolute left-1/2 top-[2.5rem] translate-x-[-50%] font-bebas text-xxs md:text-xs xl:text-md md:top-[3rem] md:left-[min(50%,14rem)] xl:left-1/2 xl:translate-x-[-100%] xl:top-[2.5rem]'>{title}</h4>
+                    <img className="m-auto z-10 h-[14rem] md:relative md:mx-[clamp(2rem,5vw,4rem)] md:h-[clamp(14rem,30vw,18rem)]" src={imageMatcher(image)} alt="project image for sabfit" />
+                </div> 
+                <div className="flex  px-6 gap-x-6 mb-4 md:w-[50%] md:flex-col md:gap-x-0 md:gap-y-6 xl:gap-0 xl:w-[55%]">
                     <article className='basis-1/2 md:relative  md:right-4 '>
-                        <h4 className='font-bebas text-xxs mb-4'>Description</h4>
-                        <p className='font-oxanium leading-7 text-[.9rem] max-w-[12rem]'>A fitness web application and CRM system complete with modern UI/UX design.</p>
+                        <h4 className='font-bebas text-xxs mb-4 md:text-xs xl:text-md'>Description</h4>
+                        <p className='font-oxanium leading-7 text-[.9rem] max-w-[16rem] md:text-[1.25rem] md:leading-9 xl:text-xs xl:max-w-[100%] xl:leading-10'>{description}</p>
                     </article>
                     <article className='basis-1/2'>
-                        <h4 className='font-bebas text-xxs mb-4 relative  right-4'>Key Features</h4>
-                        <ul className='font-oxanium leading-7 text-[.9rem] list-disc'>
-                            <li>Landing Page</li>
-                            <li>User login & Profile page</li>
-                            <li>Admin Dashboard</li>
-                            <li>Onboarding System</li>
+                        <h4 className='font-bebas text-xxs mb-4 relative  right-4 md:text-xs xl:text-md'>Key Features</h4>
+                        <ul className='font-oxanium leading-7 text-[.9rem] list-disc md:text-[1.25rem] md:leading-9 xl:text-xs xl:leading-10'>
+                            {features.map(feature=>{
+                                return <li key={features.indexOf(feature)}>{feature}</li>
+                            })}
                         </ul>
                     </article>
                 </div>
             </div>
             
-           <article className='flex flex-col items-center mx-4 '>
-                <h4 className='font-bebas text-xxs mb-4'>Tech Stack</h4>
-                <div className="flex grid-cols-6 gap-2">
-                    <article className='flex flex-col items-center'>
-                        <div className="flex items-center justify-center bg-white h-[2.75rem] w-[2.75rem] rounded-full border-4 border-[#610213] mb-2">
-                            <img src={ReactIcon} className='w-[1.5625rem]' alt="" />
-                        </div>
-                        <p className="font-oxanium text-[.8rem]">React</p>
-                    </article>
-                    <article className='flex flex-col items-center'>
-                        <div className="flex items-center justify-center bg-white h-[2.75rem] w-[2.75rem] rounded-full border-4 border-[#610213] mb-2">
-                            <img src={HTMLIcon} className='w-[1.5625rem]' alt="" />
-                        </div>
-                        <p className="font-oxanium text-[.9rem]">HTML</p>
-                    </article>
-                    <article className='flex flex-col items-center'>
-                        <div className="flex items-center justify-center bg-white h-[2.75rem] w-[2.75rem] rounded-full border-4 border-[#610213] mb-2">
-                             <img src={SASSIcon} className='w-[1.5625rem]' alt="" />
-                        </div>
-                        <p className="font-oxanium text-[.9rem]">SASS</p>
-                    </article>
-                    <article className='flex flex-col items-center'>
-                        <div className="flex items-center justify-center bg-white h-[2.75rem] w-[2.75rem] rounded-full border-4 border-[#610213] mb-2">
-                            <img src={NodeIcon} className='w-[1.5625rem]' alt="" />
-                        </div>
-                        <p className="font-oxanium text-[.9rem]">Node</p>
-                    </article>
-                    <article className='flex flex-col items-center'>
-                        <div className="flex items-center justify-center bg-white h-[2.75rem] w-[2.75rem] rounded-full border-4 border-[#610213] mb-2">
-                            <img src={ExpressIcon} className='w-[1.5625rem]' alt="" />
-                        </div>
-                        <p className="font-oxanium text-[.9rem]">Express</p>
-                    </article>
-                    <article className='flex flex-col items-center'>
-                        <div className="flex items-center justify-center bg-white h-[2.75rem] w-[2.75rem] rounded-full border-4 border-[#610213] mb-2">
-                            <img src={PostGresIcon} className='w-[1.5625rem]' alt="" />
-                        </div>
-                        <p className="font-oxanium text-[.9rem]">PostGres</p>
-                    </article>
-                </div>
+           <article className='flex flex-col items-center mx-4 xl:absolute xl:right-0 xl:bottom-0'>
+                <h4 className='font-bebas text-xxs mb-4 md:text-xs xl:text-md'>Tech Stack</h4>
+                <TechStackList {...tech_stack}/>
            </article>
         </article>
     );
