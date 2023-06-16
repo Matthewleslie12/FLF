@@ -1,5 +1,5 @@
 import NavBar from "../components/Nav/NavBar";
-import WorkWithUs from "../components/WorkWithUs.tsx/WorkWithUs";
+import WorkWithUs from "../components/WorkWithUs/WorkWithUs";
 
 const HomePage = () => {
   return (
