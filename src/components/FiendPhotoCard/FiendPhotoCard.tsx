@@ -2,7 +2,7 @@
 import { photoCardProps } from '../../types/photoCardInterface';
 import Ben from "../../assets/fiends-pics/ben.png"
 import Alejo from "../../assets/fiends-pics/alejo.png"
-import Trap from "../../assets/fiends-pics/trap.png"
+import Trap from "../../assets/fiends-pics/trap.jfif"
 import { useEffect, useState } from 'react';
 
 
@@ -33,7 +33,7 @@ const FiendPhotoCard = (photoCardProps:photoCardProps) => {
     return (
       <div className="w-[8.75rem] h-[8.75rem] rounded-full m-0 flex items-center justify-center">
         <div className="w-[8.75rem] h-[8.75rem] absolute content center-spotlight rounded-full "></div>
-        <img className="w-[6.25rem] h-[6.25rem] m-0 absolute z-10" src={source} alt="picture of the developers" ></img>
+        <img className="w-[6.25rem] h-[6.25rem] m-0 absolute z-10 rounded-full" src={source} alt="picture of the developers" ></img>
       </div>
     )}
 
@@ -43,7 +43,7 @@ const FiendPhotoCard = (photoCardProps:photoCardProps) => {
       
       <div className="slider-spotlight rounded-full w-[5.687rem] h-[5.687rem] absolute content"></div>
 
-      <img className="w-[4.375rem] h-[4.375rem] m-0 absolute z-10" src={source} alt="picture of the developers"></img>
+      <img className="w-[4.375rem] h-[4.375rem] m-0 absolute z-10 rounded-full" src={source} alt="picture of the developers"></img>
       
     </div>
   );

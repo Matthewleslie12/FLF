@@ -5,7 +5,7 @@ import GitHubLogo from "../../assets/bio-card-icons/github.svg";
 import { BioType } from "../../types/bioInterface.tsx";
 import Ben from "../../assets/fiends-pics/ben.png";
 import Alejo from "../../assets/fiends-pics/alejo.png";
-import Trap from "../../assets/fiends-pics/trap.png";
+import Trap from "../../assets/fiends-pics/trap.jfif";
 import useBioState from "../../hooks/bioHooks.tsx";
 import { useEffect } from "react";
 

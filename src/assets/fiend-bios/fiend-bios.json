@@ -27,6 +27,15 @@
       "hobbies":["Gaming","Running","Reading","Card Games", "Hiking"],
       "gitHub":"https://github.com/BenjaminStubina",
       "linkedIn":"https://www.linkedin.com/in/benjamin-stubina/"
+    },
+    {
+    "id":"Matthew",       
+    "name":"Matthew Leslie",       
+    "bio":"temp bio",       
+    "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],       
+    "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"],       
+    "gitHub":"https://github.com/Matthewleslie12",      
+    "linkedIn":"https://www.linkedin.com/in/matthew-leslie/"
     }
     
   ]
