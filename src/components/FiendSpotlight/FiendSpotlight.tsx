@@ -1,9 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-
-import Ben from "../../assets/fiends-pics/ben.png";
-import Alejo from "../../assets/fiends-pics/alejo.png";
-import Trap from "../../assets/fiends-pics/trap.png";
 import FiendPhotoCard from '../FiendPhotoCard/FiendPhotoCard';
 import { useEffect, useState } from 'react';
 // import Matt from "../../assets/fiends-pics/matt.png";
@@ -33,7 +29,7 @@ const FiendSpotlight = (SpotlightProps: SpotlightProps) => {
     setSlideActiveIndex(e.realIndex)
   }
   
-  const fiendPics = [Alejo,Trap,Ben] //Matt,NG,Sam
+   //Matt,NG,Sam
   return (
     <Swiper
     slidesPerView={3}
@@ -50,18 +46,18 @@ const FiendSpotlight = (SpotlightProps: SpotlightProps) => {
       
       768: {
         direction:"vertical",
-      }
+      },
       }}>
-      {fiendPics.map((pic,index) => {
+      {FiendBios.bios.map((fiend,index) => {
       if (slideActiveIndex === index){
         return (<SwiperSlide key={index} className="flex items-center justify-center relative bottom-[2rem] md:bottom-0" >
           
-          <FiendPhotoCard pic={pic} isActive={true}/>
+          <FiendPhotoCard pic={fiend.id} isActive={true} setActiveFiend={setActiveFiend}/>
         </SwiperSlide >)
 
       }else{
       return (<SwiperSlide key={index} className="flex items-center justify-center relative top-[1rem]" >
-          <FiendPhotoCard pic={pic} isActive={false}/>
+          <FiendPhotoCard pic={fiend.id} isActive={false} setActiveFiend={setActiveFiend}/>
         </SwiperSlide >)}
 })}
       
