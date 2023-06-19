@@ -63,6 +63,14 @@
     );
 }
 
+.footer-gradient-2 {
+  background-image: linear-gradient(
+    to bottom,
+    transparent, 
+    #A05CE3 
+  );
+}
+
 .hamburger-gradient { 
     background-image: linear-gradient(
       to bottom right,
