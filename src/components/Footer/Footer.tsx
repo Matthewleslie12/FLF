@@ -6,8 +6,8 @@ import PingPong from '../PingPong/PingPong';
 
 const Footer = () => {
     return (
-        <section className="flex-col footer-gradient-2 text-xs px-[1.5rem] py-[1.5rem] ">
-            <h1 className="text-white font-bebas">
+        <section className="flex-col footer-gradient-2 text-xs px-[1.5rem] py-[1.5rem] mt-[40px]">
+            <h1 className="text-white font-bebas my-3">
                 THANKS FOR VISITING
             </h1>
             <div className="flex justify-between ">

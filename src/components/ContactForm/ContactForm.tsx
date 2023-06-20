@@ -1,6 +1,6 @@
 const ContactForm = () => {
     return (
-        <section className="relative w-auto h-[22.5rem]">
+        <section className="relative w-auto h-[22.5rem] mt-[20px]">
             <div className="flex align-middle justify-center w-auto">
                 <div className="absolute z-0 mx-auto inset-0 w-[22.5rem] h-[22.5rem] rounded-full footer-gradient blur-md">
                 </div>

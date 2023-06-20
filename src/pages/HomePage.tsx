@@ -1,15 +1,11 @@
 import NavBar from "../components/Nav/NavBar";
-import ContactForm from "../components/ContactForm/ContactForm";
-import WorkWithUs from "../components/WorkWithUs.tsx/WorkWithUs";
-import Footer from "../components/Footer/Footer";
+import LowerSection from "../components/LowerSection/LowerSection";
 
 const HomePage = () => {
   return (
     <div className="">
       <NavBar />
-      <WorkWithUs />
-      <ContactForm />
-      <Footer />
+      <LowerSection />
     </div>
   );
 };
