@@ -3,14 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      // keyframes: {
-      //   pingPong: {
-      //     '0%, 100%': {transform: translate(0, 0);},
-      //     '25%': {transform: translate(90vw, 0);},
-      //     '50%': {transform: translate(90vw, 90vh);},
-      //     '75%': {transform: translate(0, 90vh);}
-      //   }
-      // },
+      keyframes: {
+        pingPong: {
+          '0%, 100%': { transform: 'translate(0, 0)' },
+          '50%': { transform: 'translate(50, 50))' },
+        }
+      },
       colors: {
         mainPurple: "#5709A7",
         black: "#000316",

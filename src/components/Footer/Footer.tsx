@@ -2,6 +2,7 @@ import react from '../../assets/Tech-icons/react.png';
 import tailwind from '../../assets/Tech-icons/tailwind-css.svg';
 import typescript from '../../assets/Tech-icons/Typescript_logo_2020.svg.png';
 import post from '../../assets/Tech-icons/Postgresql_elephant.svg.png';
+import PingPong from '../PingPong/PingPong';
 
 const Footer = () => {
     return (
@@ -10,10 +11,10 @@ const Footer = () => {
                 THANKS FOR VISITING
             </h1>
             <div className="flex justify-between ">
-                <div className="w-[50%] border-solid border-2 border-white h-[80px] flex justify-center items-center">
-                    {/* <PingPong /> */}
+                <div className="w-[50%] h-[80px] flex justify-center items-center">
+                    <PingPong />
                 </div>
-                <div className="w-[50%] border-solid border-2 border-white h-[80px] ">
+                <div className="w-[50%] h-[80px] ">
                     <div className="flex-col">
                         <span className="flex text-[12px] text-white leading-[40px] align-middle justify-center font-oxanium">
                             Website Designed with
