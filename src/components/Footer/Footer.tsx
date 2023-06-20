@@ -10,7 +10,7 @@ const Footer = () => {
             <h1 className="text-white font-bebas my-3">
                 THANKS FOR VISITING
             </h1>
-            <div className="flex justify-between ">
+            <div className="flex justify-evenly ">
                 <div className="w-[50%] h-[80px] flex justify-center items-center">
                     <PingPong />
                 </div>
