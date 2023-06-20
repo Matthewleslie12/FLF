@@ -9,7 +9,6 @@ const HomePage = () => {
     <div className="">
       <NavBar />
       <ProjectList/>
-      {/* <Project/> */}
       <WorkWithUs />
     </div>
   );

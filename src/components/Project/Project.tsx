@@ -1,4 +1,4 @@
-import SabrinaImage from '../../assets/sabrina.png'
+import SabrinaImage from '../../assets/project-images/sabrina.png'
 import { ProjectProps } from '../../types/projectType'
 import TechStackList from '../TechStackList/TechStackList'
 

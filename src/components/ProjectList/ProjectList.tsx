@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-import projectJSON from '../../content/projects.json'
+import projectJSON from '../../assets/content/projects.json'
 import Project from "../Project/Project";
 import { ProjectProps } from '../../types/projectType'
 
