@@ -27,6 +27,7 @@ export default {
         md: "1.875rem",
         lg: "3.125rem",
         xl: "3.75rem",
+        button:"1rem"
       },
     },
   },
