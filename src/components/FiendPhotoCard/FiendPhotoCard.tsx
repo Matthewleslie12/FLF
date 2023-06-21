@@ -1,8 +1,9 @@
 
 import { photoCardProps } from '../../types/photoCardInterface';
 import Ben from "../../assets/fiends-pics/ben.png"
-import Alejo from "../../assets/fiends-pics/alejo.png"
+import Alejo from "../../assets/fiends-pics/alejo.jpg"
 import Trap from "../../assets/fiends-pics/trap.jfif"
+import NG from "../../assets/fiends-pics/NGKao.jpg";
 import { useEffect, useState } from 'react';
 
 
@@ -26,6 +27,9 @@ const FiendPhotoCard = (photoCardProps:photoCardProps) => {
     }
     if (pic == "Trap"){
       SetSource(Trap)
+    }
+    if (pic == "NG"){
+      SetSource(NG)
     }
   },[pic])
  

@@ -36,6 +36,13 @@
     "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"],       
     "gitHub":"https://github.com/Matthewleslie12",      
     "linkedIn":"https://www.linkedin.com/in/matthew-leslie/"
+    },
+    {
+      "id":"NG",
+      "name":"NG Kao",
+      "bio":"temp bio",
+      "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
+      "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"]
     }
     
   ]

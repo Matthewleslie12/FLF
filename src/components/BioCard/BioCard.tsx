@@ -4,8 +4,9 @@ import LinkedInLogo from "../../assets/bio-card-icons/linkedin.svg";
 import GitHubLogo from "../../assets/bio-card-icons/github.svg";
 import { BioType } from "../../types/bioInterface.tsx";
 import Ben from "../../assets/fiends-pics/ben.png";
-import Alejo from "../../assets/fiends-pics/alejo.png";
+import Alejo from "../../assets/fiends-pics/alejo.jpg";
 import Trap from "../../assets/fiends-pics/trap.jfif";
+import NG from "../../assets/fiends-pics/NGKao.jpg";
 import useBioState from "../../hooks/bioHooks.tsx";
 import { useEffect } from "react";
 
@@ -21,6 +22,9 @@ const BioCard = (BioCardProps:BioType) => {
       setActiveFiendPic(Ben);
     } else if (id === "Trap") {
       setActiveFiendPic(Trap);
+    }
+    else if (id==="NG"){
+      setActiveFiendPic(NG);
     }
     
   }
