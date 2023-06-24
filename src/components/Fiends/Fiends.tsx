@@ -26,7 +26,7 @@ const Fiends = () => {
 
 
   return (
-    <div className="m-lg ">
+    <div className="m-lg mt-[4rem]">
       <h1 className="text-[1.75rem] md:text-[2.5rem] font-bebas text-offWhite self-start">Meet the Fiends</h1>
       <div className="flex flex-col md:flex-row mt-[1rem] justify-center w-full">
       <div className="w-full md:w-[17rem] h-full lg:max-w-[20rem]">
@@ -45,7 +45,7 @@ const Fiends = () => {
           
         </div>
       </div>
-      <div className="w-full flex justify-center md:max-w-[50rem]">
+      <div className="w-full flex justify-center md:max-w-[50rem] mt-[3rem]">
          <BioCard 
           id = {id}
           name={name}
