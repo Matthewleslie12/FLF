@@ -25,6 +25,8 @@ const FiendSpotlight = (SpotlightProps: SpotlightProps) => {
   const updateClasses = (e:{realIndex:number}) => {
     setSlideActiveIndex(e.realIndex)
   }
+
+
   
    //Matt,NG,Sam
   return (
@@ -34,7 +36,7 @@ const FiendSpotlight = (SpotlightProps: SpotlightProps) => {
     loop={true}
     centeredSlides={true}
     initialSlide={fiendRoster.indexOf(activeFiend)}
-    
+    slideToClickedSlide = {true}
     onActiveIndexChange={(swiper) => updateClasses(swiper)}
     onInit = {(swiper) => updateClasses(swiper)}
     className = "max-w-[32.1875rem] h-[13.625rem] md:w-full md:h-[32.8125rem] hover:cursor-pointer "

@@ -68,17 +68,17 @@ const BioCard = (BioCardProps:BioType) => {
           <ul className="list-none flex flex-col items-center ">
             <a href="RESUME ADD L8R" className="no-underline">
               <li className="">
-                <img src={ResumeIcon} alt="Resume Icon" className="min-w-[2.625rem] min-h-[2.5625rem] md:min-h-[4.375rem] md:min-w-[4.375rem]"></img>
+                <img src={ResumeIcon} alt="Resume Icon" className="min-w-[2.625rem] min-h-[2.5625rem] md:min-h-[3.125rem] md:min-w-[3.125rem]"></img>
               </li>
             </a>
             <a href={linkedIn} className="no-underline ">
               <li className="">
-                <img src={LinkedInLogo} alt="LinkedIn Logo" className="min-w-[3.1875rem] min-h-[3.1875rem] md:min-h-[5.3125rem] md:min-w-[5.3125rem] mt-md"></img>
+                <img src={LinkedInLogo} alt="LinkedIn Logo" className="min-w-[3.1875rem] min-h-[3.1875rem] md:min-h-[3.125rem] md:min-w-[3.125rem mt-md"></img>
               </li>
             </a>
             <a href={gitHub} className="no-underline">
               <li className="">
-                <img src={GitHubLogo} alt="GitHub Logo" className="min-w-[2.625rem] min-h-[2.625rem] md:min-h-[4.375rem] md:min-w-[4.375rem] mt-sm "></img>
+                <img src={GitHubLogo} alt="GitHub Logo" className="min-w-[2.625rem] min-h-[2.625rem] md:min-h-[3.125rem] md:min-w-[3.125rem] mt-sm "></img>
               </li>
             </a>
           </ul>

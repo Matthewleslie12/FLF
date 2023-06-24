@@ -35,11 +35,11 @@ const Fiends = () => {
         </div>
         <div className="hidden h-[32.8125rem] lg:flex flex-col  max-w-[17rem] mb-[1rem]">
             
-         {FiendBios.bios.map((fiend)=>{
+         {FiendBios.bios.map((fiend, index)=>{
           if (fiend.id === activeFiend){
-            return <div className="flex first:self-end even:self-center even:mr-[1rem] even:mb-[1rem]  last:self-end"><FiendPhotoCard pic={fiend.id} isActive={true} setActiveFiend={setActiveFiend}/></div>
+            return <div key={index}className="flex first:self-end even:self-center even:mr-[1rem] even:mb-[1rem]  last:self-end"><FiendPhotoCard pic={fiend.id} isActive={true} setActiveFiend={setActiveFiend}/></div>
           }else{
-            return <div className="flex first:self-end even:self-center even:mr-[3rem] even:mb-[1rem]  last:self-end"><FiendPhotoCard pic={fiend.id} isActive={false} setActiveFiend={setActiveFiend}/></div>
+            return <div key={index} className="flex first:self-end even:self-center even:mr-[3rem] even:mb-[1rem]  last:self-end"><FiendPhotoCard pic={fiend.id} isActive={false} setActiveFiend={setActiveFiend}/></div>
           }
         })}
           

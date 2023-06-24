@@ -42,14 +42,18 @@
       "name":"NG Kao",
       "bio":"temp bio",
       "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
-      "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"]
+      "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"],
+      "gitHub":"https://github.com/ngkao",
+      "linkedIn":"https://www.linkedin.com/in/ngkao/"
     },
     {
       "id":"Sam",
       "name":"Sam",
       "bio":"temp bio",
       "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
-      "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"]
+      "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"],
+      "gitHub":"https://github.com/itssamius",
+      "linkedIn":"https://www.linkedin.com/in/samius/"
     }
     
   ]
