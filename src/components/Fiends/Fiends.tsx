@@ -26,7 +26,7 @@ const Fiends = () => {
 
 
   return (
-    <div className="m-lg mt-[4rem]">
+    <div className="m-lg mt-[4rem] max-w-[1280px] xl:mx-auto">
       <h1 className="text-[1.75rem] md:text-[2.5rem] font-bebas text-offWhite self-start">Meet the Fiends</h1>
       <div className="flex flex-col md:flex-row mt-[1rem] justify-center w-full">
       <div className="w-full md:w-[17rem] h-full lg:max-w-[20rem]">
