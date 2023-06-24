@@ -5,6 +5,7 @@ import Alejo from "../../assets/fiends-pics/alejo.jpg"
 import Trap from "../../assets/fiends-pics/trap.jfif"
 import NG from "../../assets/fiends-pics/NGKao.jpg";
 import Matt from "../../assets/fiends-pics/matt.png"
+import Sam from "../../assets/fiends-pics/sam.jpg";
 import { useEffect, useState } from 'react';
 
 
@@ -34,6 +35,9 @@ const FiendPhotoCard = (photoCardProps:photoCardProps) => {
     }
     if (pic == "Matthew"){
       setSource(Matt)
+    }
+    if (pic==="Sam") {
+      setSource(Sam)
     }
   },[pic])
  

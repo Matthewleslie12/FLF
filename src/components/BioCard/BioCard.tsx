@@ -8,6 +8,7 @@ import Alejo from "../../assets/fiends-pics/alejo.jpg";
 import Trap from "../../assets/fiends-pics/trap.jfif";
 import NG from "../../assets/fiends-pics/NGKao.jpg";
 import Matt from "../../assets/fiends-pics/matt.png"
+import Sam from "../../assets/fiends-pics/sam.jpg";
 import useBioState from "../../hooks/bioHooks.tsx";
 import { useEffect } from "react";
 
@@ -28,6 +29,8 @@ const BioCard = (BioCardProps:BioType) => {
       setActiveFiendPic(NG);
     }else if (id==="Matthew"){
       setActiveFiendPic(Matt);
+    }else if (id==="Sam"){
+      setActiveFiendPic(Sam)
     }
     
   }
