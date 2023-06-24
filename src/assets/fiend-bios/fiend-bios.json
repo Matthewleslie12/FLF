@@ -43,6 +43,13 @@
       "bio":"temp bio",
       "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
       "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"]
+    },
+    {
+      "id":"Sam",
+      "name":"Sam",
+      "bio":"temp bio",
+      "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
+      "hobbies":["Gaming","Working Out","Reading","Eating", "Travelling"]
     }
     
   ]

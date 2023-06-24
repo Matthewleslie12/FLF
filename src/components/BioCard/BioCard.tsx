@@ -3,10 +3,11 @@ import ResumeIcon from "../../assets/bio-card-icons/resume.svg";
 import LinkedInLogo from "../../assets/bio-card-icons/linkedin.svg";
 import GitHubLogo from "../../assets/bio-card-icons/github.svg";
 import { BioType } from "../../types/bioInterface.tsx";
-import Ben from "../../assets/fiends-pics/ben.png";
+import Ben from "../../assets/fiends-pics/ben.jpg";
 import Alejo from "../../assets/fiends-pics/alejo.jpg";
 import Trap from "../../assets/fiends-pics/trap.jfif";
 import NG from "../../assets/fiends-pics/NGKao.jpg";
+import Matt from "../../assets/fiends-pics/matt.png"
 import useBioState from "../../hooks/bioHooks.tsx";
 import { useEffect } from "react";
 
@@ -25,6 +26,8 @@ const BioCard = (BioCardProps:BioType) => {
     }
     else if (id==="NG"){
       setActiveFiendPic(NG);
+    }else if (id==="Matthew"){
+      setActiveFiendPic(Matt);
     }
     
   }
@@ -36,7 +39,7 @@ const BioCard = (BioCardProps:BioType) => {
   
 
   return (
-    <div className="flex flex-col align-center border-4 border-borderPurple rounded-3xl pb-lg md:max-w-[32.1875rem] relative max-w-[29.6875rem] md:h-[32.8125rem]">
+    <div className="flex flex-col align-center border-4 border-borderPurple rounded-3xl pb-lg md:max-w-[25rem] relative max-w-[25rem] md:h-[32.8125rem]">
       <div className="text-center bg-gradient-to-b from-mainPurple to-white-500 rounded-tl-3xl rounded-tr-3xl md:flex">
         <h2 className="text-xs font-oxanium text-offWhite my-md font-bold md:text-[2.25rem] md:w-[15.375rem] md:text-left md:ml-[1rem]" >{name}</h2>
         {activeFiendPic && <div className="hidden md:flex rounded-full border-[0.625rem] border-borderPurple absolute top-[-5.5rem] right-[1rem]"><img src={activeFiendPic} alt="Fiend Pic" className="w-[10.2rem] h-[10.2rem] rounded-full "></img></div>}

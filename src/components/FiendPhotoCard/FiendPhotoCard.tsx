@@ -1,9 +1,10 @@
 
 import { photoCardProps } from '../../types/photoCardInterface';
-import Ben from "../../assets/fiends-pics/ben.png"
+import Ben from "../../assets/fiends-pics/ben.jpg"
 import Alejo from "../../assets/fiends-pics/alejo.jpg"
 import Trap from "../../assets/fiends-pics/trap.jfif"
 import NG from "../../assets/fiends-pics/NGKao.jpg";
+import Matt from "../../assets/fiends-pics/matt.png"
 import { useEffect, useState } from 'react';
 
 
@@ -11,7 +12,7 @@ const FiendPhotoCard = (photoCardProps:photoCardProps) => {
 
   const { pic, isActive, setActiveFiend} = photoCardProps;
 
-  const [source, SetSource] = useState<string>("");
+  const [source, setSource] = useState<string>("");
 
   const updateActiveFiend = () => {
     setActiveFiend(photoCardProps.pic)
@@ -20,16 +21,19 @@ const FiendPhotoCard = (photoCardProps:photoCardProps) => {
 
   useEffect(() => {
     if (pic == "Ben"){
-      SetSource(Ben)
+      setSource(Ben)
     }
     if (pic == "Alejo"){
-      SetSource(Alejo)
+      setSource(Alejo)
     }
     if (pic == "Trap"){
-      SetSource(Trap)
+      setSource(Trap)
     }
     if (pic == "NG"){
-      SetSource(NG)
+      setSource(NG)
+    }
+    if (pic == "Matthew"){
+      setSource(Matt)
     }
   },[pic])
  

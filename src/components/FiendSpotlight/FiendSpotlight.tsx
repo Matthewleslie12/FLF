@@ -2,9 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import FiendPhotoCard from '../FiendPhotoCard/FiendPhotoCard';
 import { useEffect, useState } from 'react';
-// import Matt from "../../assets/fiends-pics/matt.png";
-// import NG from "../../assets/fiends-pics/ng.png";
-// import Sam from "../../assets/fiends-pics/sam.png";
 import FiendBios from "../../assets/fiend-bios/fiend-bios.json";
 import { SpotlightProps } from '../../types/SpotlightProps';
 
@@ -37,7 +34,7 @@ const FiendSpotlight = (SpotlightProps: SpotlightProps) => {
     loop={true}
     centeredSlides={true}
     initialSlide={fiendRoster.indexOf(activeFiend)}
-    onSwiper={(swiper) => console.log(swiper)}
+    
     onActiveIndexChange={(swiper) => updateClasses(swiper)}
     onInit = {(swiper) => updateClasses(swiper)}
     className = "max-w-[32.1875rem] h-[13.625rem] md:w-full md:h-[32.8125rem] hover:cursor-pointer "
