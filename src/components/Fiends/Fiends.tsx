@@ -5,7 +5,7 @@ import BioCard from "../BioCard/BioCard";
 import { BioType } from "../../types/bioInterface";
 import FiendPhotoCard from "../FiendPhotoCard/FiendPhotoCard";
 import FiendSpotlight from "../FiendSpotlight/FiendSpotlight";
-
+import "./Fiends.scss"
 
 const Fiends = () => {
 
@@ -33,13 +33,13 @@ const Fiends = () => {
         <div className="lg:hidden">
           <FiendSpotlight activeFiend={activeFiend} setActiveFiend={setActiveFiend}/>
         </div>
-        <div className="hidden h-[32.8125rem] lg:flex flex-col  max-w-[17rem] mb-[1rem]">
+        <div className="revolver hidden lg:flex lg:ml-[3rem] lg:mb-[5rem]">
             
          {FiendBios.bios.map((fiend, index)=>{
           if (fiend.id === activeFiend){
-            return <div key={index}className="flex first:self-end even:self-center even:mr-[1rem] even:mb-[1rem]  last:self-end"><FiendPhotoCard pic={fiend.id} isActive={true} setActiveFiend={setActiveFiend}/></div>
+            return <div key={index}className="flex"><FiendPhotoCard pic={fiend.id} isActive={true} setActiveFiend={setActiveFiend}/></div>
           }else{
-            return <div key={index} className="flex first:self-end even:self-center even:mr-[3rem] even:mb-[1rem]  last:self-end"><FiendPhotoCard pic={fiend.id} isActive={false} setActiveFiend={setActiveFiend}/></div>
+            return <div key={index} className="flex "><FiendPhotoCard pic={fiend.id} isActive={false} setActiveFiend={setActiveFiend}/></div>
           }
         })}
           
