@@ -1,3 +1,4 @@
+import Fiends from "../components/Fiends/Fiends";
 import NavBar from "../components/Nav/NavBar";
 // import Project from "../components/Project/Project";
 import ProjectList from "../components/ProjectList/ProjectList";
@@ -9,6 +10,7 @@ const HomePage = () => {
     <div className="">
       <NavBar />
       <ProjectList/>
+      <Fiends />
       <WorkWithUs />
     </div>
   );
