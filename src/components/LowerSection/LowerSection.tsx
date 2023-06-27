@@ -1,15 +1,15 @@
 import Footer from "../Footer/Footer";
 import ContactForm from "../ContactForm/ContactForm";
-import WorkWithUs from "../WorkWithUs.tsx/WorkWithUs";
-import penguin from '../../assets/Tech-icons/Hotpot 1.png'
+import WorkWithUs from "../WorkWithUs/WorkWithUs";
 
 const LowerSection = () => {
     return (
-        <section className="flex-col relative">
-            <WorkWithUs />
-            <ContactForm />
+        <section className="flex-col relative overflow-hidden">
+            <div className="flex-col md:flex md:flex-row">
+                <WorkWithUs />
+                <ContactForm />
+            </div>
             <Footer />
-            <img src={penguin} alt="" className="absolute bg-transparent bottom-[9%] left-[51%]"></img>
         </section>
     )
 }

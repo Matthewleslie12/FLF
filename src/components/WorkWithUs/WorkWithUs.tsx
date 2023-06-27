@@ -1,6 +1,6 @@
 const WorkWithUs = () => {
     return (
-        <section className="flex-col justify-center align-middle content-center">
+        <section className="flex-col justify-center align-middle content-center md:w-[50%]">
             <h2 className="flex justify-start font-bebas text-xs text-white mx-[1.5rem] my-[1rem] md:text-[2.5rem] md:mx-[3.125rem] xl:text-[3.125rem] xl:mx-[4.25rem] xl:my-16 ">
                 Work With Us
             </h2>
