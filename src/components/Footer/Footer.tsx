@@ -10,20 +10,20 @@ const Footer = () => {
             <h1 className="text-white font-bebas my-3">
                 THANKS FOR VISITING
             </h1>
-            <div className="flex justify-evenly ">
-                <div className="w-[50%] h-[80px] flex justify-center items-center">
+            <div className="flex justify-evenly md: ">
+                <div className="w-[150px] h-[80px] flex justify-center items-center">
                     <PingPong />
                 </div>
-                <div className="w-[50%] h-[80px] ">
+                <div className="w-auto h-[80px] ">
                     <div className="flex-col">
                         <span className="flex text-[12px] text-white leading-[40px] align-middle justify-center font-oxanium">
                             Website Designed with
                         </span>
                         <div className="flex flex-row justify-between">
-                            <img src={react} alt="React Logo" className="w-[25%] aspect-[4/3] object-contain" />
-                            <img src={tailwind} alt="React Logo" className="w-[25%] aspect-[4/3] object-contain" />
-                            <img src={typescript} alt="React Logo" className="w-[25%] aspect-[4/3] object-contain" />
-                            <img src={post} alt="React Logo" className="w-[25%] aspect-[4/3] object-contain" />
+                            <img src={react} alt="React Logo" className="w-[39px] aspect-[4/3] object-contain" />
+                            <img src={tailwind} alt="React Logo" className="w-[39px] aspect-[4/3] object-contain" />
+                            <img src={typescript} alt="React Logo" className="w-[39px] aspect-[4/3] object-contain" />
+                            <img src={post} alt="React Logo" className="w-[39px] aspect-[4/3] object-contain" />
                         </div>
                     </div>
                 </div>
