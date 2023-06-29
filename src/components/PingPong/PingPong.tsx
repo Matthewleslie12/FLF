@@ -8,7 +8,7 @@ const PingPong = () => {
             <div className="ping"></div>
             <div className="pong"></div>
             <Link to='https://www.linkedin.com/company/freelance-fiends-flf/' target='_blank' rel='noreferrer'>
-                <img src={ball} alt="" className='ball absolute'></img>
+                <img src={ball} alt="" className='ball md:ballTablet absolute'></img>
             </Link>
         </div>
     )

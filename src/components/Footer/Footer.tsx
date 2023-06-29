@@ -7,18 +7,18 @@ import penguin from '../../assets/Tech-icons/oie_4t1L8VhfL5Es.png'
 
 const Footer = () => {
     return (
-        <section className="flex flex-col footer-gradient-2 text-xs px-[1.5rem] py-[1.5rem]">
+        <section className="flex flex-col footer-gradient-2 text-xs px-[1.5rem] md:px-0 py-[1.5rem]">
             <div className='flex justify-between align-middle w-[312px] mx-auto'>
                 <h1 className="flex text-white font-bebas items-end">
                     THANKS FOR VISITING
                 </h1>
                 <img src={penguin} alt="" className=""></img>
             </div>
-            <div className="flex flex-col space-y-2 w-[312px] md:flex-row md:w-[720px] md:justify-between mx-auto">
+            <div className="flex flex-col space-y-2 w-[312px] md:flex-row md:w-[624px] md:mx-auto md:justify-between mx-auto">
                 <div className="flex w-[312px] h-[80px] mt-5 align-middle">
                     <PingPong />
                 </div>
-                <div className="flex md:w-[calc(100%-312px)] h-[80px]">
+                <div className="flex md:w-[312px] h-[80px]">
                     <div className="flex flex-col">
                         <span className="flex text-[12px] text-white leading-[40px] align-middle justify-center font-oxanium">
                             Website Designed with
