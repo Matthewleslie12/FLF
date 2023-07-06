@@ -9,7 +9,7 @@
   
   .animate-fadeIn {
     animation-name: fadeIn;
-    animation-duration: 1s; /* Adjust the duration as needed */
+    animation-duration: 1s; 
   }
 
   @keyframes fadeOut {
@@ -23,5 +23,5 @@
   
   .animate-fadeOut {
     animation-name: fadeOut;
-    animation-duration: 1s; /* Adjust the duration as needed */
+    animation-duration: 1s;
   }
