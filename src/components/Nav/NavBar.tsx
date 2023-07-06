@@ -45,11 +45,11 @@ const NavBar = () => {
   return (
     <nav className="relative flex justify-between items-center h-20 md:h-[8rem] px-[1rem] md:px-[1rem] xl:max-w-[1280px] xl:m-auto">
       {!isMenuOpen ? 
-        <img src={logo} alt="Full FLF Logo" className="h-6 w-auto animate-fadeOut cursor-pointer" />
+        <img src={logo} alt="Full FLF Logo" className="h-6 w-auto animate-fadeOut cursor-pointer z-10 relative" />
         :
         <>
-        <img src={DevilLogo} alt="Devil FLF Logo" className="animate-fadeIn md:hidden cursor-pointer"/>
-        <img src={logo} alt="Full FLF Logo" className="h-6 md:h-10 xl:h-14 w-auto cursor-pointer animate-fadeOut md:block hidden " />
+        <img src={DevilLogo} alt="Devil FLF Logo" className="animate-fadeIn md:hidden cursor-pointer z-10 relative"/>
+        <img src={logo} alt="Full FLF Logo" className="h-6 md:h-10 xl:h-14 w-auto cursor-pointer animate-fadeOut md:block hidden z-10 relative" />
         </>
       } 
       {!isMenuOpen ? 
