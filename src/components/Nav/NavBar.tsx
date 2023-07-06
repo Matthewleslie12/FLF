@@ -40,8 +40,10 @@ const NavBar = () => {
     };
   }, []);
 
+  // bg-gradient-to-b from-purple-950 to-transparent
+
   return (
-    <nav className="flex justify-between items-center h-20 md:h-[8rem] mx-[1rem] md:mx-[1rem] xl:max-w-[1240px] xl:m-auto">
+    <nav className="relative flex justify-between items-center h-20 md:h-[8rem] px-[1rem] md:px-[1rem] xl:max-w-[1280px] xl:m-auto">
       {!isMenuOpen ? 
         <img src={logo} alt="Full FLF Logo" className="h-6 w-auto animate-fadeOut cursor-pointer" />
         :
@@ -63,7 +65,7 @@ const NavBar = () => {
           <div 
             className="font-bebas text-white text-sm md:text-[2.5rem] animate-fadeIn"
           >
-            <div className="flex flex gap-4 align-item">
+            <div className="flex flex gap-4 align-item z-10 relative">
               <ul className="flex gap-4 md:gap-10 items-center justify-center xl:mr-[4rem]">
                 <li 
                   className="cursor-pointer border-b-[.0625rem] border-transparent hover:border-white transition duration-300"
@@ -81,6 +83,8 @@ const NavBar = () => {
               <div className="w-12 h-12 flex items-center justify-center md:hidden">
                 <img className="pb-1 w-8 h-8 cursor-pointer" onClick={toggleMenu} src={CloseButton} alt="Close Button" />
               </div>
+            </div>
+            <div className={`absolute z-1 top-0 left-0 w-full bg-gradient-to-b from-purple-950 to-transparent h-12 md:h-[5rem]`}>
             </div>
           </div>
       }
