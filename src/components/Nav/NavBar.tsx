@@ -22,8 +22,6 @@ const NavBar = () => {
     }
   };
 
-  // Need to add id to each section. Ex id="team" id="projects" id="home"
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -40,8 +38,6 @@ const NavBar = () => {
     };
   }, []);
 
-  // bg-gradient-to-b from-purple-950 to-transparent
-
   return (
     <nav className="relative flex justify-between items-center h-20 md:h-[8rem] px-[1rem] md:px-[1rem] xl:max-w-[1280px] xl:m-auto">
       {!isMenuOpen ? 
@@ -49,13 +45,14 @@ const NavBar = () => {
         :
         <>
         <img src={DevilLogo} alt="Devil FLF Logo" className="animate-fadeIn md:hidden cursor-pointer z-10 relative"/>
-        <img src={logo} alt="Full FLF Logo" className="h-6 md:h-10 xl:h-14 w-auto cursor-pointer animate-fadeOut md:block hidden z-10 relative" />
+        <img src={logo} alt="Full FLF Logo" className="h-6 md:h-10 xl:h-9 w-auto cursor-pointer animate-fadeOut md:block hidden z-10 relative" />
         </>
       } 
       {!isMenuOpen ? 
           <div
-            className="rounded-full w-12 h-12 hamburger-gradient flex flex-col py-2 cursor-pointer justify-center hover:border-2 hover:border-white-500 animate-fadeOut"
+            className="rounded-full w-12 h-12 hamburger-gradient flex flex-col py-2 cursor-pointer justify-center animate-fadeOut"
             onClick={toggleMenu} 
+            style={{ background: 'linear-gradient(90deg, rgb(96,10,182) 0%, rgb(96,10,182,0.5) 100%)' }}
           >
             <img src={line} alt="" className="mx-auto py-1" />
             <img src={line} alt="" className="mx-auto py-1" />
@@ -63,7 +60,7 @@ const NavBar = () => {
           </div>
           :
           <div 
-            className="font-bebas text-white text-sm md:text-[2.5rem] animate-fadeIn"
+            className="font-bebas text-white text-sm md:text-[1.625rem] lg:text-md] animate-fadeIn"
           >
             <div className="flex flex gap-4 align-item z-10 relative">
               <ul className="flex gap-4 md:gap-10 items-center justify-center xl:mr-[4rem]">
