@@ -11,7 +11,7 @@ const Project = ({image,title,description,features,tech_stack}: ProjectProps) =>
         }
     }
     return (
-        <article className='text-white xl:max-w-[1280px] xl:m-auto relative'>
+        <article className='text-white xl:max-w-[1280px] xl:m-auto relative' id="projects">
             <h2 className=" font-bebas text-xs pl-4 md:text-[2.5rem] md:mb-6 xl:text-lg">Projects</h2>
             <div className="md:flex ">
                 <div className="blur-xl rounded-full project-gradient absolute right-[50%] translate-x-1/2 h-[23rem] w-[23rem] md:w-[clamp(30rem,60vw,32rem)] md:h-[clamp(30rem,60vw,32rem)] md:left-[-8rem] md:right-0 md:translate-x-[9vw] xl:translate-x-[7rem] content"></div>

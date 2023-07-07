@@ -1,0 +1,9 @@
+  .button {
+    background-color: transparent;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .4s ease-in-out;
+    color:  white;
+  }
+  .button:hover {
+    box-shadow: 0 0 10px 0  #600AB6 inset, 0 0 20px 2px  #600AB6;
+  }
