@@ -5,7 +5,7 @@ import WorkWithUs from "../WorkWithUs/WorkWithUs";
 const LowerSection = () => {
     return (
         <section className="flex-col relative overflow-hidden">
-            <div className="flex flex-col md:flex md:flex-row md:h-[637px] xl:h-[813px] md:justify-between">
+            <div className="flex flex-col md:flex md:flex-row md:h-[637px] xl:h-[813px]">
                 <WorkWithUs />
                 <ContactForm />
             </div>
