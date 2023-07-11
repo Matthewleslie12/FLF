@@ -13,10 +13,21 @@ $white: #ffffff;
 	border-width: 1px;
 	border-style: solid;
 	border-color: $white;
+
+	@media only screen and (min-width: 1280px) {
+		border-width: 5px;
+		border-style: solid;
+		border-color: $white;
+	}
 	
 	.ping, .pong {
 		width: 4px;
 		height: 24px;
+
+		@media only screen and (min-width: 1280px) {
+			width: 8px;
+			height: 48px;
+		}
 		
 		position: absolute;
 		
@@ -41,6 +52,10 @@ $white: #ffffff;
 		width: 30px;
 		animation: ball 6s infinite linear;
 
+		@media only screen and (min-width: 1280px) {
+			width: 60px;
+			height: 60px;
+		}
 		
 	}
 }
