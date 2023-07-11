@@ -1,0 +1,9 @@
+[
+    {
+        "title":"SabFitness",
+        "image":"Sabrina",
+        "description":"A fitness web application and CRM system complete with modern UI/UX design.",
+        "features":["Landing Page","User login & Profile Page","Admin Dashboard", "Onboarding System"],
+        "tech_stack":["React","HTML","SASS","Node","Express","PostGres"]
+    }
+]

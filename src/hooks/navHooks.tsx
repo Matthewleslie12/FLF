@@ -1,13 +1,10 @@
 import {useState} from "react";
+// import{ NavType } from "../types/navType";
 
 const useMenuState = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  return {isMenuOpen, toggleMenu};
+  return {isMenuOpen, setIsMenuOpen};
 };
 
 export default useMenuState;

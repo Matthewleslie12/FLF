@@ -15,6 +15,7 @@ export default {
         offWhite: "#D9D9D9",
         formbutton: "#00093D",
         borderPurple: "rgba(90, 1, 178, 0.37)",
+        
       },
       fontFamily: {
         bebas: ["Bebas Neue"],
@@ -29,7 +30,14 @@ export default {
         xl: "3.75rem",
         button:"1rem"
       },
+      spacing:{
+        sm:"0.5rem",
+        md:"1rem",
+        lg:"1.5rem",
+        xl:"2rem",
+      }
     },
   },
   plugins: [],
 };
+
