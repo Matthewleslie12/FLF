@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        pingPong: {
+          '0%, 100%': { transform: 'translate(0, 0)' },
+          '50%': { transform: 'translate(50, 50))' },
+        }
+      },
       colors: {
         mainPurple: "#5709A7",
         black: "#000316",
@@ -22,6 +28,7 @@ export default {
         md: "1.875rem",
         lg: "3.125rem",
         xl: "3.75rem",
+        button:"1rem"
       },
       spacing:{
         sm:"0.5rem",

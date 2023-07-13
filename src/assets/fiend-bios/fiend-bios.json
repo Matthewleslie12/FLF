@@ -22,9 +22,9 @@
     {
       "id":"Ben",
       "name":"Benjamin Stubina",
-      "bio":"temp bio",
+      "bio":"Former Materials Science Engineer turned software developer. I'm a problem solver at heart and love using my creative thinking to develop and execute solutions for technical problems",
       "techStack":["HTML", "TAILWIND", "TYPESCRIPT", "REACT","NODE","EXPRESS","MySQL", "AWS"],
-      "hobbies":["Gaming","Running","Reading","Card Games", "Hiking"],
+      "hobbies":["Gaming","Camping","Reading","Soccer", "Freestyle Skiing"],
       "gitHub":"https://github.com/BenjaminStubina",
       "linkedIn":"https://www.linkedin.com/in/benjamin-stubina/"
     },
